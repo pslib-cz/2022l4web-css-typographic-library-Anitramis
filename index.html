@@ -1,12 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./donwload/hegr.css">
+    <link rel="stylesheet" href="./my.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,900;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <title>Library - hegr</title>
 </head>
-<body>
-    
+
+<body id="YOYO">
+    <header>
+        <h1><a href="#YOYO">YOYO</a></h1>
+        <ul class="seznam">
+            <li><a href="#Headings">Headings</a></li>
+            <li><a href="#Text">Text</a></li>
+            <li><a href="#List">List</a></li>
+            <li><a href="#Alert">Alert</a></li>
+            <li><a href="#Photo">Photo</a></li>
+        </ul>
+    </header>
+    <main>
+
+
+        <section class="section_s" id="Headings">
+            <h2 class="main_section">Headings</h2>
+            <p>Predefined headings that you just need to use in your HTML for an appearance that looks like the example. 
+            </p>
+            <div class="boxes">
+                <div class="flex">
+                    <p><b>h1, h2, h3, h4, h5</b> { <br>
+                        font-weight: 600; <br>
+                        color: rgb(23, 23, 23); <br>
+                        letter-spacing: .1em; <br>
+                        margin: 0; <br>
+                        }
+                    </p>
+                </div>
+                <p class="character">&#9758;</p>
+                <div class="flex">
+                    <h1>Tohle je H1</h1>
+                    <h2>Tohle je H2</h2>
+                    <h3>Tohle je H3</h3>
+                    <h4>Tohle je H4</h4>
+                    <h5>Tohle je H5</h5>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section_s" id="Text">
+            <h2 class="main_section">Text</h2>
+            <p>Predefined text that you just need to use in your HTML for an appearance that looks like the example.
+            </p>
+            <div class="boxes">
+                <div class="flex">
+                    <p><b>p</b> {<br>
+                        margin: 0; <br>
+                        }</p>
+                </div>
+                <p class="character">&#9758;</p>
+                <div class="flex">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nulla sequi sunt aliquam
+                        est<br>
+                        modi fugit corrupti veritatis illo libero beatae atque similique aut id enim. Laborum maxime<br>
+                        inventore molestias.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section_s" id="List">
+            <h2 class="main_section">List</h2>
+            <p>A sheet using predefining can look like this.
+            </p>
+            <div class="boxes">
+                <div class="flex">
+                    <p><b>ul</b> {<br>
+                        margin: 0;<br>
+                        padding-left: 0em;<br>
+                        list-style: circle inside;<br>
+                    }<br>
+                    
+                    <b>ul ul,</b><br>
+                    <b>ol ol</b> {<br>
+                        margin: 0 0 0 2.5em;<br>
+                    }/p>
+                </div>
+                <p class="character">&#9758;</p>
+                <div class="flex">
+                    <ul>
+                        <li>Paliva</li>
+                            <ul>
+                                <li>Nafta</li>
+                                <li>Diesel</li>
+                            </ul>
+                        <li>Elektro</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section_s" id="Alert">
+            <h2 class="main_section">Alert</h2>
+            <p>Alert mainly for notifications on the page. Simple appearance, for simple pre-definition. [in HTML use class - .message]
+            </p>
+            <div class="boxes">
+                <div class="flex">
+                    <p><b>.message</b> {<br>
+                        padding-top: auto;<br>
+                        padding-bottom: auto;<br>
+                        padding: 15px;<br>
+                        color: rgb(0, 0, 0);<br>
+                        margin: 15px 0;<br>
+                        display: flex;<br>
+                        gap: 12px;<br>
+                        border-radius: 5px;<br>
+                        background-color: rgb(203, 203, 203);<br>
+                    }</p>
+                </div>
+                <p class="character">&#9758;</p>
+                <div class="flex_non">
+                    <div class="message">
+                    <span class="btn-close">&#9758;</span>
+                    <p>orem ipsum dolor sit amet consectetur adipisicing elit. Debitis repel.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section_s" id="Photo">
+        <h2 class="main_section">Photo</h2>
+        <p>The approximate image, using the above definition, can look like this. [in HTML use class - .photo_alone]
+        </p>
+        <div class="boxes">
+            <div class="flex">
+                <p><b>.photo_alone</b> {<br>
+                    overflow: hidden;<br>
+                    width: fit-content;<br>
+                }
+                <br>
+                <b>.photo_alone a:hover img</b> {<br>
+                    transform: scale(1.07);<br>
+                    transition: 0.3s;<br>
+                }</p>
+            </div>
+            <p class="character">&#9758;</p>
+            <div class="flex_non">
+                <figure class="photo_alone">
+                    <a href="./img/goat.jpg">
+                        <img src="./photo/forest-ge3559edf6_640.jpg" alt="forest">
+                    </a>
+                </figure>
+            </div>
+        
+
+        
+
+    </section>
+
+
+    </main>
+    <footer>
+        <h3>YOYO</h3>
+    </footer>
 </body>
+
 </html>
